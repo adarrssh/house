@@ -1,0 +1,16 @@
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(151, 146, 146);
+
+}
+
+
+
+input{
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+}

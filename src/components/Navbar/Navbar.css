@@ -1,0 +1,64 @@
+.navBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+
+.bold-font{
+font-weight: bold;
+}
+
+.nav-left{
+    padding: 8px;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-color{
+    color: #7067df;
+}
+
+.br-cl{
+    border:1px solid #7067df;
+    color: #7067df;
+}
+.nav-left button{
+    border: none;
+    color: black;
+    background: transparent;
+}
+
+.nav-left button:hover{
+    background-color: #cecfd0;
+    color:  #7067df;
+}
+
+.dropdown button{
+    border: none;
+    color: black;
+    background: transparent;
+}
+
+.nav-right{
+    padding: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-right button{
+    margin-right: 10px;
+}
+
+
+
+.button-col{
+    color: white;
+    background-color: #7067df;
+}
