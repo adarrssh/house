@@ -1,21 +1,32 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Menu.css"
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AirlineSeatIndividualSuiteIcon from '@mui/icons-material/AirlineSeatIndividualSuite';
 import HotTubIcon from '@mui/icons-material/HotTub';
 import LandscapeIcon from '@mui/icons-material/Landscape';
-import data from '../data'
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
-const Menu = () => {
+const Menu = ({listItem,isLiked}) => {
 
-    const [lists, setList] = useState(data);
+    // const [heart, isHeart] = useState(true)
 
     return (
         <div className='Menu-card'>
 
-            {lists.map((list) => {
+            {listItem.map((list,key) => {
                 return (
-                    <div className="card-div">
+                    <div key={key} className="card-div">
+
+                        <div className="btn-abs">
+
+                            <button type="button" className="btn btn-primary position-relative">
+                                Recommended
+                                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    99+
+                                    <span className="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </div>
 
                         <div className="card-top">
                             <img src={require("./menuimg.jpg")} alt="" />
@@ -26,7 +37,11 @@ const Menu = () => {
                                     ${list.price}
                                 </span>
                                     /month</p>
-                                <FavoriteBorderIcon className='icon-color' />
+
+                                <div className='menu-icon' onClick={() => { isLiked(list.id) }}>
+                                         {list.like===false?<FavoriteBorderIcon className='icon-color' />:<FavoriteIcon className='icon-color'/>}
+                                    
+                                </div>
 
                             </div>
                             <div className='house-name'>

@@ -12,19 +12,19 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div>
+                    <button type="button" className="btn">Rent</button>
+                </div>
+                <div>
                     <button type="button" className="btn">Buy</button>
+
                 </div>
                 <div>
                     <button type="button" className="btn">Sell</button>
 
                 </div>
-                <div>
-                    <button type="button" className="btn">Rent</button>
-
-                </div>
                 <div className="dropdown">
                     <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        Manage Property
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a className="dropdown-item" href="/">Action</a></li>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown">
                     <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        Resources
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a className="dropdown-item" href="/">Action</a></li>

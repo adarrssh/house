@@ -1,0 +1,101 @@
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.filter-body{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin-btm-p{
+    margin-bottom: -3px;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.p-bold-text{
+    color: black;
+    font-weight: bold;
+    
+}
+
+.filter1{
+    flex: 1;
+    cursor: pointer;
+}
+
+
+
+.filter2{
+    flex: 1;
+    cursor: pointer;
+}
+
+.filter3{
+    flex: 1;
+    cursor: pointer;
+}
+
+.filter4{
+    flex: 1;
+    cursor: pointer;
+}
+
+.filter5{
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu li button:hover{
+    background-color: inherit;
+    color:#7067df;
+
+}
+
+.filter button{
+    width: 7rem;
+}
+
+
+.drop-downdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.filter-left{
+    width: 80%;
+}
+
+.filter-right{
+    width: 20%;
+}
+
+.filter-c{
+    cursor: pointer;
+}
+
+
+.filter-line{
+    height: 30px;
+    width: 2px;
+    margin-right: 20px;
+    background-color: black;
+}

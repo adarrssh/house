@@ -3,10 +3,23 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
+.btn-abs{
+    position: absolute;
+    left: -0;
+    top: 35%;
+}
 
+.btn-abs button{
+    background-color: #20c997;
+    border: none;
+}
+
+.bts-abs button:hover{
+    border: none;
+    color: none;
+}
 
 .card-div{
     width: 30%;
@@ -44,10 +57,12 @@
     font-size: 1.2rem;
 }
 
-.house-price span{
-    color: #7067df;
-    font-weight: bold;
+.menu-icon{
+    cursor: pointer;
+    border: none;
 }
+
+
 
 .house-name{
     display: flex;
