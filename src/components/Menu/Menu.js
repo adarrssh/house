@@ -29,7 +29,7 @@ const Menu = ({listItem,isLiked}) => {
                         </div>
 
                         <div className="card-top">
-                            <img src={require("./menuimg.jpg")} alt="" />
+                            <img src={list.img} alt="" />
                         </div>
                         <div className="card-btm">
                             <div className='house-price'>
@@ -67,7 +67,7 @@ const Menu = ({listItem,isLiked}) => {
                                     <div className='icon'>
                                         <HotTubIcon />
                                     </div>
-                                    <div>{list.bathroom} Bathroom</div>
+                                    <div>{list.bathroom} loo</div>
                                 </div>
                                 <div className="area">
                                     <div className='icon'>

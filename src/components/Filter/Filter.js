@@ -59,7 +59,7 @@ const Filter = ({ filterItem, filterText,
                         <div className="filter-left">
 
                             <p className="margin-btm-p">Price</p>
-                            <p className='p-bold-text'>{filterProp}</p>
+                            <p className='p-bold-text'>{filterPrice}</p>
                         </div>
 
                         <div className="filter-right">
@@ -68,9 +68,9 @@ const Filter = ({ filterItem, filterText,
 
                     </div>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(1000)}>$500-$1000</button></li>
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(2000)} >$1000-$2000</button></li>
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(3000)}>$2000-$3000</button></li>
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(1000)}>$1000</button></li>
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(2000)} >$2000</button></li>
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(3000)}>$3000</button></li>
                     </ul>
                 </div>
 
