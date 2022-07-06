@@ -3,9 +3,9 @@ import './Filter.css'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Filter = ({ filterItem, filterText,
-    filterDateItem,filterDate,
-    filterPriceItem,filterPrice,
-    filterPropTypeItem,filterProp }) => {
+    filterDateItem, filterDate,
+    filterPriceItem, filterPrice,
+    filterPropTypeItem, filterProp }) => {
     return (
         <div className='filter'>
             <div className="filter-body">
@@ -26,7 +26,6 @@ const Filter = ({ filterItem, filterText,
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><button className="dropdown-item" onClick={() => filterItem("New York,USA")}>New York, USA</button></li>
                         <li><button className="dropdown-item" onClick={() => filterItem("Los Angeles,USA")} >Los Angeles, USA</button></li>
-                        <li><button className="dropdown-item" onClick={() => filterItem("Chicago,USA")}>Chicago, USA</button></li>
                     </ul>
                 </div>
 
@@ -54,28 +53,6 @@ const Filter = ({ filterItem, filterText,
 
                 <div className='filter-line'></div>
 
-                <div className='filter3'>
-                    <div className='drop-downdiv' data-bs-toggle="dropdown" aria-expanded="false">
-                        <div className="filter-left">
-
-                            <p className="margin-btm-p">Price</p>
-                            <p className='p-bold-text'>{filterPrice}</p>
-                        </div>
-
-                        <div className="filter-right">
-                            <ArrowDropDownIcon className="icon-color" />
-                        </div>
-
-                    </div>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(1000)}>$1000</button></li>
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(2000)} >$2000</button></li>
-                        <li><button className="dropdown-item" onClick={() => filterPriceItem(3000)}>$3000</button></li>
-                    </ul>
-                </div>
-
-                <div className='filter-line'></div>
-
                 <div className='filter4'>
                     <div className='drop-downdiv' data-bs-toggle="dropdown" aria-expanded="false">
                         <div className="filter-left">
@@ -93,6 +70,32 @@ const Filter = ({ filterItem, filterText,
                         <li><button className="dropdown-item" onClick={() => filterPropTypeItem("House")}>House</button></li>
                         <li><button className="dropdown-item" onClick={() => filterPropTypeItem("Flat")}>Flat</button></li>
                         <li><button className="dropdown-item" onClick={() => filterPropTypeItem("Villa")}>Villa</button></li>
+                    </ul>
+                </div>
+
+                <div className='filter-line'></div>
+
+
+
+
+
+                <div className='filter3'>
+                    <div className='drop-downdiv' data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className="filter-left">
+
+                            <p className="margin-btm-p">Price</p>
+                            <p className='p-bold-text'>{filterPrice}</p>
+                        </div>
+
+                        <div className="filter-right">
+                            <ArrowDropDownIcon className="icon-color" />
+                        </div>
+
+                    </div>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(1000)}>$1000</button></li>
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(2000)} >$2000</button></li>
+                        <li><button className="dropdown-item" onClick={() => filterPriceItem(3000)}>$3000</button></li>
                     </ul>
                 </div>
 

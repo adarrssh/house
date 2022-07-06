@@ -6,12 +6,10 @@
 .main{
   display: flex;
   justify-content: center ;
-  background-color: rgb(241, 241, 241);
 }
 
 .main-body{
   margin-top: 30px;
-  background-color: rgb(241, 241, 241);
 
   width: 80%;
 }
@@ -23,4 +21,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+@media only screen and (max-width:800px){
+  .main-body{
+    width: 95%;
+  }
 }

@@ -14,42 +14,38 @@ function App() {
   const [filterPrice, setFilterPrice] = useState("");
   const [filterProp, setFilterProp] = useState("");
 
-  if (Items.length === 0) {
-    return (
-      <div className="error">
-        <div>
-          <h1>Ah.. Oh.. Looks like we don't have what you are looking for!</h1>
-        </div>
-      </div>
-    )
-  }
 
 
+  // location filter func
   const filterItem = (category) => {
-    const newItems = Items.filter((item) => item.Location === category);
+    const newItems = data.filter((item) => item.Location === category);
     setFilterText(category);
     setItems(newItems)
   }
 
+  // date filter func
   const filterDateItem = (category) => {
-    const newItems = Items.filter((item) => item.date === category);
+    const newItems = data.filter((item) => item.date === category);
     setFilterDate(category)
     setItems(newItems)
 
   }
-
+  
+  // price filter func
   const filterPriceItem = (category) => {
-    const newItems = Items.filter((item) => item.price === category);
+    const newItems = data.filter((item) => item.price === category);
     setFilterPrice(category)
     setItems(newItems)
   }
 
+  // property type func
   const filterPropTypeItem = (category) => {
-    const newItems = Items.filter((item) => item.property === category);
+    const newItems = data.filter((item) => item.property === category);
     setFilterProp(category);
     setItems(newItems)
   }
 
+  //  like func
   const isLiked = (id) => {
 
     const newItems = [...Items]
@@ -72,7 +68,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div className="main">
         <div className='main-body'>
           <Heading  
